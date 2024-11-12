@@ -22,4 +22,4 @@ public:
     void Draw();
 };
 
-#endif FEVERWORM_H
+#endif // FEVERWORM_H

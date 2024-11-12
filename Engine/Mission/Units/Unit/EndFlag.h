@@ -14,4 +14,4 @@ public:
     void Draw();
 };
 
-#endif ENDFLAG_H
+#endif // ENDFLAG_H

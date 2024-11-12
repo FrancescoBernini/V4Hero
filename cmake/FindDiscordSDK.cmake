@@ -43,10 +43,11 @@ endif ()
 FetchContent_Declare(
         discord_game_sdk
         URL "https://dl-game-sdk.discordapp.net/${DiscordSDK_FIND_VERSION_MAJOR}.${DiscordSDK_FIND_VERSION_MINOR}.${DiscordSDK_FIND_VERSION_PATCH}/discord_game_sdk.zip"
+        DOWNLOAD_EXTRACT_TIMESTAMP TRUE
 )
 FetchContent_GetProperties(discord_game_sdk)
 if (NOT discord_game_sdk_POPULATED)
-    FetchContent_Populate(discord_game_sdk)
+    FetchContent_MakeAvailable(discord_game_sdk)
 endif ()
 set(DISCORD_GAME_SDK_PATH ${discord_game_sdk_SOURCE_DIR})
 
